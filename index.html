@@ -6,39 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            padding: 3%; }
+            padding: 3%;
+            margin: 0;
+            font-family: 'Arial', serif; }
         img {
             border-radius: 50%; 
             width:200px;
             float: right; }
+        .right {
+            line-height: 1.5;
+        }
+        hr {
+            height: 3px;
+            background: linear-gradient(to right, #0000ff 0%, #00ff00 100%);
+            width: 70%;
+            float: left;
+            border: 10%;
+        }
+        .myDiv {
+            position: relative;
+            box-sizing: border-box;
+            margin: auto;
+            background:white;
+            color:black;
+        }
+
+        .myDiv:after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin-bottom: -3px; /* !importanté */
+            background: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0))
+        }
     </style>
     <title>Resume</title>
 </head>
 <body>
     <div class="container">
         <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEaI8BYewqUBw/profile-displayphoto-shrink_400_400/0/1618498028676?e=1625097600&v=beta&t=nzvSZtwZ9pP7jIITWTToymZsbHV0kAiRoEm16ZIWMVk"
-     alt="Triyambaka Mishra">
-    <h1>Triyambaka Mishra</h1>       
-    <p><strong>Email: </strong><a href="mailto:1929062@kiit.ac.in">1929062@kiit.ac.in</a></p>
-    <p><strong>Address: </strong>Badadanda Sahi, Badamba, Cuttack</p>
-    <p><strong>Phone: </strong><a href="tel:9348512076">+91 9348512076</a></p>
-    <p><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/triyambaka-mishra-640a6915a/">https://www.linkedin.com/in/triyambaka-mishra-640a6915a/</a></p>
-    <p><strong>Github: </strong><a href="https://github.com/triyam">https://github.com/triyam</a></p>
+         alt="Triyambaka Mishra">
+            <td>
+                <div class="left-center">
+                    <h2>Triyambaka Mishra</h2> 
+                </div>
+        <div class="right">
+            <p><strong>Email: </strong><a href="mailto:1929062@kiit.ac.in">1929062@kiit.ac.in</a><br>
+            <strong>Address: </strong>Badadanda Sahi, Badamba, Cuttack <br>
+            <strong>Phone: </strong><a href="tel:9348512076">+91 9348512076</a><br>
+            <strong>Linkedin: </strong><a href="https://www.linkedin.com/in/triyambaka-mishra-640a6915a/">https://www.linkedin.com/in/triyambaka-mishra-640a6915a/</a><br>
+            <strong>Github: </strong><a href="https://github.com/triyam">https://github.com/triyam</a></p>
+        </div>
     <hr>
-    <h4>OBJECTIVE</h4>
+    <br>
+    <div class="myDiv">
+        <h4>OBJECTIVE</h4>
+      </div>
+    
     <ul>
         <li>To associate myself with an organization that provides a challenging job and an opportunity to provide innovative skills and diligent work.</li>
         <li>To be involved in providing software solutions to enhance Front-End as well as Back-End</li>
     </ul>
     <hr>
-    <h4>EXPERIENCE</h4>
+    <br>
+    
+    <div class="myDiv">
+        <h4>EXPERIENCE</h4>
+      </div>
+    
     <div style="padding-left: 2%;">
         <p>I am a Fresher, I have no past industry experience.</p>
     </div>
     
     <hr>
-    <h4>COURSES DONE</h4>
+    <br>
+
+    <div class="myDiv">
+        <h4>COURSES DONE</h4>
+      </div>
+    
     <ul>
         <li>Web Development from Udemy</li>
         <li>Web Development from Coursera</li>
@@ -47,7 +93,13 @@
         <li>MongoDB from Youtube</li>
         <li>OpenCV from Youtube</li>
     </ul>
-    <h4>EDUCATIONAL BACKGROUND</h4>
+    <hr>
+    <br>
+
+    <div class="myDiv">
+        <h4>EDUCATIONAL BACKGROUND</h4>
+      </div>
+    <br>
     <table border="1" style="border-collapse: collapse; text-align: center; padding: 10cm; ">
         <tr>
             <th>Degree of Examination</th>
@@ -75,19 +127,34 @@
         </tr>
     </table>
     <hr>
-    <h4>SOFTWARE SKILLS</h4>
-    <ul class="right">
+    <br>
+
+    <div class="myDiv">
+        <h4>SOFTWARE SKILLS</h4>
+      </div>
+    
+    <ul class="#">
         <li>Programming languages: C, HTML, CSS, JavaScript, Python and Bash.</li>
         <li>Technologies: Node, Flask, OpenCV, Selenium, MongoDB</li>
         <li>Operating Systems: Linux (extensive experience), Windows XP, 7, 10.</li>
     </ul>
     <hr>
-    <h4>ACCOMPLISHMENT</h4>
+    <br>
+
+    <div class="myDiv">
+        <h4>ACCOMPLISHMENT</h4>
+      </div>
+    
     <div style="padding-left: 2%;">
         <p>Participated in the KIIT IncubatedInt Hackathon 2021 and came in the Top 10 teams.</p>
     </div>
     <hr>
-    <h4>PERSONAL DETAILS</h4>
+    <br>
+
+    <div class="myDiv">
+        <h4>PERSONAL DETAILS</h4>
+      </div>
+    <br>
     <table>
         <tr>
             <th>DOB:  </th>
@@ -103,8 +170,13 @@
         </tr>
     </table>
     <hr>
-    <h4>REFERENCE</h4>
-    <ul class="right">
+    <br>
+
+    <div class="myDiv">
+        <h4>REFERENCE</h4>
+      </div>
+    
+    <ul class="#">
         <li>Manas Ranjan Lenka
             Assistant Professor (KIIT UNIVERSITY)
             </li>
